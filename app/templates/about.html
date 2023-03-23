@@ -1,0 +1,25 @@
+<!-- Übernommen -->
+{% extends "base.html" %}
+
+<!-- Eigenentwicklung -->
+{% block app_content %}
+    <h1>Über bookshelf</h1>
+    <p>bookshelf ist eine Webapplikation mit der Bücher inventarisiert und verwaltet werden können. Die Anwendung bietet eine einfache Möglichkeit, eine Liste von Büchern zu erstellen und diese nach Titel, Autor, ISBN oder Thema zu sortieren. bookshelf ist ideal für alle, die gerne lesen und ihre Sammlung organisieren möchten. Die Plattform kann auch von Bibliothekaren und Buchhändlern genutzt werden, um ihre Bestände zu verwalten und den Überblick über verliehene Bücher zu behalten.</p>
+    <p>Die Anwendung ist einfach zu bedienen und bietet eine intuitive Benutzeroberfläche. bookshelf ist plattformübergreifend verfügbar, da es in jedem modernen Browser funktionert. bookshelf befindet sich noch im Aufbau. Aktuell ist es als Standalone-Lösung umgesetzt um die Bücher einer Person oder einer Organisation zu verwalten. Benutzer können ein Konto erstellen und Bücher erfassen. Diese werden allerdings in einer zentralen, für alle angemeldeten Benutzer zugänglichen, Datenbank gespeichert.</p>
+
+    <h2>Benutzeranleitung</h2>
+    <p>Die Benutzeranleitung kann hier als PDF heruntergeladen werden: <a href="/static/Benutzeranleitung.pdf">Download PDF</a>.</p>
+
+    <h2>Hintergrundinformationen</h2>
+    <p>Diese Webapplikation wurde im Rahmen der Praxisarbeit VCID.IA1A.PA der ipso Bildung AG erstellt. Teilnehmer Nummer IFA: 1.051.539<br>
+    In den Fächern DBWE, ITAR und VICC wurde theoretisches Wissen erarbeitet, welches nun in der Praxis umgesetzt werden soll.<br>
+    Folgender Funktionsumfang wird von der Webapplikation verlangt:<br>
+    <ul>
+	    <li>eine interaktive Weboberfläche</li>
+	    <li>Zugriff via Benutzerkonten und Passwörter geregelt</li>
+	    <li>Daten in einer relationalen Datenbank gespeichert</li>
+	    <li>Geschäftslogik vorhanden</li>
+	    <li>(mindestens) lesender Zugriff über RESTful Web-API</li>
+    </ul>
+    </p>
+{% endblock %}

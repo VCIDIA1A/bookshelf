@@ -1,0 +1,9 @@
+<!-- Übernommen -->
+{% extends "base.html" %}
+
+<!-- Eigenentwicklung -->
+{% block app_content %}
+    <h1>Ein unerwarteter Fehler ist aufgetreten!</h1>
+    <p>Aber keine Angst, dafür kannst du nichts! Wir schauen uns das Problem an.</p>
+    <p><a href="{{ url_for('index') }}">zurück zur Startseite</a></p>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!-- Eigenentwicklung --> 
+{% extends "base.html" %}
+{% block app_content %}
+    <h1>bookshelf</h1>
+    <p>Willkommen zurück {{ current_user.username }}!</p>
+
+<!-- Eigenentwicklung in Anlehnung an Beautiful Interactive Tables for your Flask Templates von Miguel Grinberg. Quelle: https://blog.miguelgrinberg.com/post/beautiful-interactive-tables-for-your-flask-templates -->
+    <table class="table table-hover">
+	    <thead>
+		    <tr>
+			    <th>Titel</th>
+			    <th>Autor</th>
+			    <th>ISBN</th>
+			    <th>Thema/Genre</th>
+			    <th>Erfassungsdatum</th>
+                    </tr>
+	    </thead>
+	    <tbody>
+		    {% for book in books %}
+		    	<tr>
+				<td>{{ book.title }}</td>
+				<td>{{ book.author }}</td>
+				<td>{{ book.isbn }}</td>
+				<td>{{ book.thema }}</td>
+				<td>{{ book.timestamp }}</td>
+				<td><a href="edit/{{ book.id }}">Buch bearbeiten</a> | <a href="delete/{{ book.id }}">Buch löschen</a></td>
+			</tr>
+                    {% endfor %}
+	    </tbody>
+     </table>
+{% endblock %}

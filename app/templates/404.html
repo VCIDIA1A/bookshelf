@@ -1,0 +1,9 @@
+<!-- Übernommen -->
+{% extends "base.html" %}
+
+<!-- Eigenentwicklung -->
+{% block app_content %}
+    <h1>Fehler 404</h1>
+    <p>Oh, diese Seite gibt es (noch) nicht!</p>
+    <p><a href="{{ url_for('index') }}">zurück zur Startseite</a></p>
+{% endblock %}
